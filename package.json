@@ -2,7 +2,7 @@
   "name": "spa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.beamer-winkel.nl/service/keuzehulp",
+  "homepage": "",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
