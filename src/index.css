@@ -1,13 +1,127 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2 {
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  text-align: center;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+#a > li {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#a li a {
+  color: #2ac37d;
+}
+
+.breadcrumb {
+  width: 100%;
+  height: 50px;
+  background-color: #2ac37d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+}
+.breadcrumb a {
+  color: #ffffff;
+}
+.item-link {
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 30px auto;
+}
+
+.item-link:hover {
+  opacity: 0.8;
+}
+
+.naviget {
+  width: 100%;
+  position: fixed;
+  bottom: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.naviget button {
+  padding: 10px;
+  width: 100px;
+  font-weight: bold;
+  background-color: yellow;
+  border-radius: 10px;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 250px;
+}
+.product .title {
+  color: #2ac37d;
+  font-weight: bold;
+}
+.product img {
+  width: 240px;
+  height: 200px;
+}
+.product a {
+  padding: 5px;
+  font-size: 16;
+  font-weight: bold;
+  text-align: center;
+  background: #f1ab53;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  display: block;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+.product a:hover {
+  background-color: #e45636;
 }
