@@ -17,12 +17,12 @@ const NavigationButtons = () => {
             setIsForword(true);
           }}
         >
-          &#8592; Terug
+          &#8592; Back
         </button>
       )}
 
       {isForwoard && (
-        <button onClick={() => Navigate(1)}>Volgende &#8594;</button>
+        <button onClick={() => Navigate(1)}>Forward &#8594;</button>
       )}
     </div>
   );
