@@ -5,42 +5,42 @@ const KantoorLichtKlein = () => {
   let products = [
     {
       id: 1,
-      title: "XGIMI AURA",
+      title: "Epson EB-1780W",
       imgURL:
-        "https://ls.codetech.nl/shops/299003/files/429899866/700x700x2/xgimi-xgimi-aura-4k-ust-beamer.jpg",
+        "https://ls.codetech.nl/shops/299003/files/329200910/700x700x2/epson-epson-eb-1780w-draadloze-wxga-beamer.jpg",
       description: `<p class="prodect-description">
-          ✔ Home Cinema<br>
-	  ✔ 4K UHD Laser<br>
-	  ✔ 2400 ANSI Lumen<br>
-	  ✔ Harman Kardon Soundbar<br>
+          ✔ Kantoor Beamer<br>
+	  ✔ WXGA Resolutie<br>
+	  ✔ 3200 ANSI Lumen<br>
+	  ✔ Laptop Formaat<br>    
         </p>`,
-      link: "https://www.beamer-winkel.nl/xgimi-aura.html",
+      link: "https://www.beamer-winkel.nl/epson-eb-1780w.html",
     },
     {
       id: 2,
-      title: "Samsung LSP7T",
+      title: "Epson EB-805f",
       imgURL:
-        "https://ls.codetech.nl/shops/299003/files/365781589/700x700x2/samsung-samsung-lsp7t-4k-ust-smart-laser-projector.jpg",
+        "https://ls.codetech.nl/shops/299003/files/426339369/700x700x2/epson-epson-eb-805f-digital-signage-installatie-be.jpg",
       description: `<p class="prodect-description">
-          ✔ Home Cinema &amp; Laser TV<br>
-	  ✔ 4K UHD Laser<br>
-	  ✔ 2200 ANSI Lumen<br>
-	  ✔ Smart Apps &amp; TV<br>
+          ✔ Ultra Short Beamer<br>
+	  ✔ Full HD Resolutie<br>
+	  ✔ 5000 ANSI Lumen<br>
+	  ✔ Direct voor de muur te plaatsen<br>   
         </p>`,
-      link: "https://www.beamer-winkel.nl/samsung-lsp7t.html",
+      link: "https://www.beamer-winkel.nl/epson-eb-805f.html",
     },
     {
       id: 3,
-      title: "Epson EH-LS650b",
+      title: "Optoma UHD35STx",
       imgURL:
-        "https://ls.codetech.nl/shops/299003/files/439606281/700x700x2/epson-epson-eh-ls650b-4k-laser-ultra-short-throw.jpg",
+        "https://ls.codetech.nl/shops/299003/files/415488376/700x700x2/optoma-optoma-uhd35stx-4k-short-throw-3d-home-cine.jpg",
       description: `<p class="prodect-description">
-          ✔ Home Cinema &amp; Laser TV<br>
-	  ✔ 4K UHD Laser<br>
+          ✔ Short Throw Beamer<br>
+	  ✔ 4K UHD Resolutie<br>
 	  ✔ 3600 ANSI Lumen<br>
-	  ✔ Apps &amp; Yamaha Soundbar<br>
+	  ✔ Snelle beeldverversing<br>  
         </p>`,
-      link: "https://www.beamer-winkel.nl/epson-eh-ls650b.html",
+      link: "https://www.beamer-winkel.nl/optoma-uhd35stx.html",
     },
   ];
   return (
