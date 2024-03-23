@@ -21,7 +21,7 @@ const Breadcrumb = () => {
 
   return (
     <div className="breadcrumb">
-      Your are on:
+      Begin:
       {breadcrumbs.map((breadcrumb, index) => (
         <span key={breadcrumb.path}>
           <Link to={breadcrumb.path}>{breadcrumb.name}</Link>
