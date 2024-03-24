@@ -5,6 +5,7 @@ const Home = () => {
   return (
     <>
       <h1>Keuzehulp Beamers en Projectieschermen</h1>
+      Maak een keuze uit een van de onderstaande opties 
       <h2>Ik zoek een...</h2>
 
       <Link to="/beamer" className="item-link">
