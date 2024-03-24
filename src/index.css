@@ -36,7 +36,7 @@ a {
 
 .breadcrumb {
   width: 100%;
-  height: 60px;
+  height: 50px;
   background-color: #2ac37d;
   display: flex;
   justify-content: center;
@@ -46,6 +46,7 @@ a {
 }
 .breadcrumb a {
   color: #ffffff;
+  font-size: 8px
 }
 .item-link {
   display: block;
