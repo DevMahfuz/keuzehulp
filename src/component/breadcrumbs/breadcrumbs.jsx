@@ -21,7 +21,7 @@ const Breadcrumb = () => {
 
   return (
     <div className="breadcrumb">
-      Begin:
+     <span style={{ fontSize: '8px' }}>Begin:</span> {/* Inline style for "Begin" */}
       {breadcrumbs.map((breadcrumb, index) => (
         <span key={breadcrumb.path}>
           <Link to={breadcrumb.path}>{breadcrumb.name}</Link>
