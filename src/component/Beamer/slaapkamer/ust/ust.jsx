@@ -5,16 +5,16 @@ const SlaapkamerUst = () => {
   let products = [
     {
       id: 1,
-      title: "XGIMI AURA",
+      title: "XGIMI AURA 2",
       imgURL:
-        "https://ls.codetech.nl/shops/299003/files/429899866/700x700x2/xgimi-xgimi-aura-4k-ust-beamer.jpg",
+        "https://ls.codetech.nl/shops/299003/files/465098364/700x700x2/xgimi-xgimi-aura-2-dolby-vision-hdr-en-imax-enhanc.jpg",
       description: `<p class="prodect-description">
           ✔ Home Cinema<br>
 	  ✔ 4K UHD Laser<br>
 	  ✔ 2400 ANSI Lumen<br>
-	  ✔ Harman Kardon Soundbar<br>
+	  ✔ Dolby Atmos & Dolby Vision<br>
         </p>`,
-      link: "https://www.beamer-winkel.nl/xgimi-aura.html",
+      link: "https://www.beamer-winkel.nl/xgimi-aura-2.html",
     },
     {
       id: 2,
