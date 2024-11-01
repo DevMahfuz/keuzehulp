@@ -18,7 +18,7 @@ const SlaapkamerDichtbij = () => {
     },
     {
       id: 2,
-      title: "Epson EF-22",
+      title: "Epson EF-22B",
       imgURL:
         "https://ls.codetech.nl/shops/299003/files/466024393/700x700x2/epson-epson-ef-22b-metallic-zwart-smart-mini-beame.jpg",
       description: `<p class="prodect-description">
