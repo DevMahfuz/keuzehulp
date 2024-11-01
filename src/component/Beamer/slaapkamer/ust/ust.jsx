@@ -18,16 +18,16 @@ const SlaapkamerUst = () => {
     },
     {
       id: 2,
-      title: "Samsung LSP7T",
+      title: "Samsung LPU7D",
       imgURL:
-        "https://ls.codetech.nl/shops/299003/files/365781589/700x700x2/samsung-samsung-lsp7t-4k-ust-smart-laser-projector.jpg",
+        "https://ls.codetech.nl/shops/299003/files/465339105/700x700x2/samsung-samsung-premiere-lpu7d-4k-tizen-os-project.jpg",
       description: `<p class="prodect-description">
           ✔ Home Cinema &amp; Laser TV<br>
 	  ✔ 4K UHD Laser<br>
-	  ✔ 2200 ANSI Lumen<br>
+	  ✔ 2800 ANSI Lumen<br>
 	  ✔ Smart Apps &amp; TV<br>
         </p>`,
-      link: "https://www.beamer-winkel.nl/samsung-lsp7t.html",
+      link: "https://www.beamer-winkel.nl/samsung-premiere-lpu7d-2024.html",
     },
     {
       id: 3,
