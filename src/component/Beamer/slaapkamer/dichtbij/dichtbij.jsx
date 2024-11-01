@@ -5,29 +5,29 @@ const SlaapkamerDichtbij = () => {
   let products = [
     {
       id: 1,
-      title: "XGIMI Mogo 2 Pro",
+      title: "XGIMI Mogo 3 Pro",
       imgURL:
-        "https://ls.codetech.nl/shops/299003/files/429904708/700x700x2/xgimi-xgimi-mogo-2-pro-full-hd-mini-beamer.jpg",
+        "https://ls.codetech.nl/shops/299003/files/465337388/xgimi-xgimi-mogo-3-pro-draagbare-smart-beamer.jpg",
       description: `<p class="prodect-description">
           ✔ Mini Beamer<br>
 	  ✔ Full HD<br>
-	  ✔ 500 ANSI Lumen<br>
+	  ✔ 450 ANSI Lumen<br>
 	  ✔ Apps &amp; Harman Kardon<br>
         </p>`,
-      link: "https://www.beamer-winkel.nl/xgimi-mogo-2-pro.html",
+      link: "https://www.beamer-winkel.nl/xgimi-mogo-3-pro.html",
     },
     {
       id: 2,
-      title: "XGIMI Elfin",
+      title: "Epson EF-22",
       imgURL:
-        "https://ls.codetech.nl/shops/299003/files/429911216/700x700x2/xgimi-xgimi-elfin-full-hd-smart-beamer.jpg",
+        "https://ls.codetech.nl/shops/299003/files/466024393/700x700x2/epson-epson-ef-22b-metallic-zwart-smart-mini-beame.jpg",
       description: `<p class="prodect-description">
           ✔ Mini Beamer<br>
 	  ✔ Full HD<br>
-	  ✔ 800 ANSI Lumen<br>
+	  ✔ 1000 ANSI Lumen<br>
 	  ✔ Apps &amp; Harman Kardon<br>
         </p>`,
-      link: "https://www.beamer-winkel.nl/xgimi-elfin.html",
+      link: "https://www.beamer-winkel.nl/epson-ef-22b-metallic-zwart.html",
     },
     {
       id: 3,
