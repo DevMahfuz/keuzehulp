@@ -5,7 +5,7 @@ const SlaapkamerDichtbij = () => {
   let products = [
     {
       id: 1,
-      title: "XGIMI Mogo 3 Pro",
+      title: "Stobe Beamer",
       imgURL:
         "https://ls.codetech.nl/shops/299003/files/465337388/xgimi-xgimi-mogo-3-pro-draagbare-smart-beamer.jpg",
       description: `<p class="prodect-description">
