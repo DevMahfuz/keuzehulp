@@ -1,0 +1,16 @@
+export { createProduct, CATEGORIES } from "./productModel";
+export { rankProjectors, pickProjectorHighlights, scoreProjector } from "./projectorScoring";
+export { rankScreens, pickScreenHighlights, scoreScreen } from "./screenScoring";
+export { recommendSet } from "./setScoring";
+export { requiredAnsiLumens } from "./brightness";
+export { evaluateThrowFit, userThrowIntent } from "./throwFit";
+export { applyCommercialScore, commercialBrandPoints } from "./commercialScore";
+export { recommend, debugSnapshot, isAdvisorDebugEnabled, matchBand } from "./recommend";
+export { catalogStats, isLiveProjector, isReliableProjector, isSparseProjector, isEnrichedProjector } from "./catalogStats";
+export { classifyProduct, classificationCounts } from "./classify";
+export { hydrateProduct } from "./hydrate";
+export { classifySegments, attachSegments } from "./segments";
+export { categorySignalsFromTitles } from "./shopCategories";
+export { evaluateIntentFit } from "./intentFit";
+export { inferThrowClass, THROW_CLASS_THRESHOLDS } from "../utils/screenGeometry";
+export { parseCsv, parseSpecRow, parseThrowRatio, enrichProductList } from "./specifications";

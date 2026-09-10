@@ -1,0 +1,661 @@
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) {
+  --bw-keuzehulp-banner-height: 200px;
+  --kh-green: #1f9d63;
+  --kh-green-dark: #167a4c;
+  --kh-green-soft: #e8f7ef;
+  --kh-orange: #ef8a2c;
+  --kh-orange-dark: #d4741c;
+  --kh-bg: #f4f6f7;
+  --kh-surface: #ffffff;
+  --kh-text: #0b1f33;
+  --kh-muted: #5b675f;
+  --kh-line: #e3e8e5;
+  --kh-shadow: 0 10px 30px rgba(28, 36, 33, 0.07);
+  --kh-radius: 18px;
+  --kh-radius-sm: 12px;
+  --kh-focus: 0 0 0 3px rgba(31, 157, 99, 0.35);
+  isolation: isolate;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --green: var(--kh-green);
+  --green-dark: var(--kh-green-dark);
+  --green-soft: var(--kh-green-soft);
+  --orange: var(--kh-orange);
+  --orange-dark: var(--kh-orange-dark);
+  --bg: var(--kh-bg);
+  --surface: var(--kh-surface);
+  --text: var(--kh-text);
+  --muted: var(--kh-muted);
+  --line: var(--kh-line);
+  --shadow: var(--kh-shadow);
+  --radius: var(--kh-radius);
+  --radius-sm: var(--kh-radius-sm);
+  --focus: var(--kh-focus);
+  box-sizing: border-box;
+  color: var(--kh-text);
+  line-height: 1.5;
+  overflow-x: visible;
+  width: 100%;
+  max-width: 100%;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) *,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) *::before,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) *::after {
+  box-sizing: border-box;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-standalone,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-embed-section,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-embed-modal {
+  font-family: inherit;
+  background: transparent;
+  min-height: 0;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-dialog .kh-app {
+  min-height: 100%;
+  height: 100%;
+  background: var(--kh-bg);
+  overflow: auto;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) button,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) input {
+  font: inherit;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-app {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--green);
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-brand small {
+  display: block;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-hero,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-card,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-option,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-product,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-hero {
+  padding: 40px 28px;
+  text-align: center;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-kicker {
+  color: var(--green-dark);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 0 0 10px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) h1,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) h2,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) h3 {
+  margin: 0 0 10px;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-lead {
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 640px;
+  margin: 0 auto 28px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 18px;
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-trust span::before {
+  content: "✓ ";
+  color: var(--green);
+  font-weight: 700;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn:focus-visible,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-option:focus-visible,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-icon-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn-primary {
+  background: var(--green);
+  color: #fff;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn-primary:hover {
+  background: var(--green-dark);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn-accent {
+  background: var(--orange);
+  color: #fff;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn-accent:hover {
+  background: var(--orange-dark);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn-ghost:hover {
+  border-color: #c5cec9;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-grid {
+  display: grid;
+  gap: 16px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-option {
+  text-align: left;
+  padding: 18px;
+  cursor: pointer;
+  width: 100%;
+  color: inherit;
+  min-height: 56px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-option:hover,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-option.is-selected {
+  border-color: var(--green);
+  box-shadow: 0 0 0 2px var(--green-soft), var(--shadow);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-option .emoji {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-option .hint,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-muted {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-progress-wrap {
+  margin-bottom: 18px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-progress-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-bar {
+  height: 8px;
+  background: #e7eeea;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-bar > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--green), #3ecf8e);
+  border-radius: 99px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-why {
+  background: var(--green-soft);
+  color: #21553c;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  margin: 16px 0 20px;
+  font-size: 14px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-banner {
+  background: #fff7ec;
+  border: 1px solid #f3ddbc;
+  color: #7a4a12;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-banner.error {
+  background: #fff1f0;
+  border-color: #f3c4c0;
+  color: #7a2e28;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-results-head {
+  margin-bottom: 22px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-chip {
+  background: var(--green-soft);
+  color: #1c5a3a;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-product {
+  padding: 18px;
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 18px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-product > .kh-badge,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-product > .kh-alt-kicker {
+  grid-column: 1 / -1;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-product img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: #eef2f0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-badge {
+  display: inline-block;
+  background: var(--green);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-bottom: 8px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-badge.orange {
+  background: var(--orange);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-price {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-price s {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-stock {
+  font-size: 13px;
+  color: var(--green-dark);
+  font-weight: 600;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-stock.out {
+  color: #a33;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-pros {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-pros li {
+  position: relative;
+  padding-left: 18px;
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-pros li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: 700;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-warn {
+  font-size: 13px;
+  color: #8a5a12;
+  background: #fff7ec;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-notice-ok {
+  font-size: 13px;
+  color: #167a4c;
+  background: #e8f7ef;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-warn p {
+  margin: 6px 0 0;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-alt-kicker {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #8a5a12;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-debug {
+  margin-top: 12px;
+  padding: 10px;
+  background: #111;
+  color: #cde;
+  font-size: 11px;
+  overflow: auto;
+  border-radius: 8px;
+  max-height: 240px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-spec {
+  font-size: 12px;
+  background: #f3f6f4;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-loading {
+  text-align: center;
+  padding: 24px 8px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-more {
+  margin: 8px 0 12px;
+  font-size: 14px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-more summary {
+  cursor: pointer;
+  color: var(--muted);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare {
+  margin-top: 28px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare-mobile {
+  display: none;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare-desktop {
+  overflow-x: auto;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+  min-width: 520px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare-card p {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare-card span {
+  color: var(--muted);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare th,
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare td {
+  border-bottom: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare th {
+  background: #f7faf8;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-set-row {
+  display: grid;
+  gap: 12px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-set-item {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-set-item img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-skeleton {
+  background: linear-gradient(90deg, #eee, #f7f7f7, #eee);
+  background-size: 200% 100%;
+  animation: bw-keuzehulp-shine 1.2s infinite;
+  border-radius: 12px;
+  height: 160px;
+}
+
+@keyframes bw-keuzehulp-shine {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-empty {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-icon-btn {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  cursor: pointer;
+  min-height: 44px;
+}
+
+@media (max-width: 720px) {
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-hero {
+    padding: 28px 18px;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-main {
+    padding: 20px 16px 48px;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-product {
+    grid-template-columns: 1fr;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-product img {
+    height: 168px;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-lead {
+    font-size: 16px;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-set-item {
+    grid-template-columns: 64px 1fr;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-actions .kh-btn {
+    width: 100%;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-hero-actions .kh-btn {
+    width: 100%;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-nav .kh-btn,
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-icon-btn {
+    min-height: 48px;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare-desktop {
+    display: none;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .kh-compare-mobile {
+    display: block;
+  }
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) h1 {
+    font-size: 1.45rem;
+  }
+}

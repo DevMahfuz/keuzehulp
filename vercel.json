@@ -1,0 +1,14 @@
+{
+  "framework": "create-react-app",
+  "buildCommand": "CI=true npm run build",
+  "outputDirectory": "build",
+  "headers": [
+    {
+      "source": "/embed/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "public, max-age=60, s-maxage=300" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher {
+  display: grid;
+  grid-template-columns: minmax(140px, 210px) minmax(0, 1fr) minmax(180px, 230px);
+  align-items: center;
+  gap: 16px 24px;
+  height: var(--bw-keuzehulp-banner-height, 200px);
+  max-height: 220px;
+  padding: 16px 22px;
+  background: #eef8f2;
+  border: 1px solid #d7efe3;
+  border-radius: 16px;
+  color: #0b1f33;
+  overflow: hidden;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 0;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-visual svg {
+  width: 100%;
+  height: auto;
+  max-height: 168px;
+  display: block;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-copy {
+  min-width: 0;
+  text-align: center;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-title {
+  margin: 0 0 6px;
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #0b1f33;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-lead {
+  margin: 0 auto 14px;
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #3d4d45;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-btn {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  padding: 11px 14px;
+  border-radius: 10px;
+  background: #1f9d63;
+  color: #fff;
+  min-height: 44px;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-btn:hover {
+  background: #167a4c;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31, 157, 99, 0.35);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-btn-accent {
+  background: #1f9d63;
+  box-shadow: inset 0 0 0 2px #ef8a2c;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-aside {
+  text-align: left;
+  padding-left: 8px;
+  border-left: 3px solid #ef8a2c;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-aside p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #0b1f33;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0;
+  background: rgba(11, 31, 51, 0.55);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-dialog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #f4f6f7;
+  color: #0b1f33;
+  box-shadow: none;
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-close {
+  appearance: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: #fff;
+  color: #0b1f33;
+  font: inherit;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(11, 31, 51, 0.12);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-close:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(31, 157, 99, 0.35);
+}
+
+:is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-dialog .kh-header-inner {
+  padding-right: 64px;
+}
+
+@media (min-width: 900px) {
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-overlay {
+    align-items: center;
+    padding: 24px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-dialog {
+    width: min(1120px, 100%);
+    height: min(92vh, 920px);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba(11, 31, 51, 0.28);
+  }
+}
+
+@media (max-width: 1024px) {
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher {
+    grid-template-columns: 110px minmax(0, 1fr);
+    height: auto;
+    max-height: none;
+    padding: 16px 18px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-aside {
+    grid-column: 1 / -1;
+    border-left: 0;
+    padding-left: 0;
+    border-top: 3px solid #ef8a2c;
+    padding-top: 10px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher {
+    grid-template-columns: 1fr;
+    height: auto;
+    max-height: none;
+    padding: 14px;
+    gap: 10px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-visual {
+    display: none;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-copy {
+    text-align: left;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-title {
+    font-size: 20px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-lead {
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-aside {
+    font-size: 13px;
+  }
+
+  :is(#beamer-keuzehulp, .bw-keuzehulp-scope) .bw-keuzehulp-launcher-aside p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
